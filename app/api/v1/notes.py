@@ -38,7 +38,6 @@ async def search_note_endpoint(
     return notes
 
 
-
 @router.post("/", response_model=NoteInDB)
 async def create_note_endpoint(note: NoteCreate, db: AsyncSession = Depends(get_db)):
     return await create_note_service(db, note)
