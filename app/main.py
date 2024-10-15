@@ -1,5 +1,5 @@
-from fastapi import FastAPI
-from app.api.v1.notes import router as notes_router
+from fastapi import FastAPI, Query
+from app.api.v1.notes import router as notes_router  #импортируем роутер со всеми маршрутами
 from app.core.init_db import init_db
 
 app = FastAPI()

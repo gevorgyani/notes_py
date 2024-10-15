@@ -13,3 +13,4 @@ class Note(Base):
     created_at = Column(DateTime, default=datetime.now())
     updated_at = Column(DateTime, default=datetime.now())
     is_deleted = Column(Boolean, default=False)
+    status = Column(String)
